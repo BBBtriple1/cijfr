@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cijfr - Dutch Mark Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cijfr</h1>
+        <p class="subtitle">Dutch Mark Calculator</p>
+        <div class="settings">
+            <label for="method">Method:</label>
+            <select id="method">
+                <option value="lineair">Lineair (%)</option>
+                <option value="nonlineair">Non-lineair (%)</option>
+                <option value="nterm">N-term</option>
+                <option value="foutperpunt">Fout per punt</option>
+                <option value="eigen">Eigen formule</option>
+            </select>
+        </div>
+        <div id="inputs"></div>
+        <button id="calculate">Bereken</button>
+        <div id="result" class="hidden"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
