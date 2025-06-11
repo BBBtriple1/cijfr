@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cijfr - Cijfercalculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cijfr</h1>
+        <p class="subtitle">Reken je cijfers eenvoudig uit</p>
+        <div class="settings">
+            <label for="method">Methode:</label>
+            <select id="method">
+                <option value="lineair">Lineair (%)</option>
+                <option value="nonlineair">Non-lineair (%)</option>
+                <option value="nterm">N-term</option>
+                <option value="foutperpunt">Fout per punt</option>
+                <option value="eigen">Eigen formule</option>
+            </select>
+        </div>
+        <div id="inputs"></div>
+        <button id="calculate">Bereken</button>
+        <div id="result" class="hidden"></div>
+        <table id="resultTable" class="hidden">
+            <thead>
+                <tr><th>Parameter</th><th>Waarde</th></tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <canvas id="resultChart" class="hidden" width="400" height="200"></canvas>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
